@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Lite 1.0</title>
+    <style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4285f4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.install-button {
+    background-color: #34a853;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.install-button:hover {
+    background-color: #2c8b4b;
+}
+
+.app-details {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.app-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.app-info {
+    flex: 1;
+}
+
+.description, .screenshots, .reviews {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.screenshot-container {
+    display: flex;
+    gap: 10px;
+}
+
+.screenshot-container img {
+    width: calc(33.333% - 10px);
+    height: auto;
+    border-radius: 10px;
+}
+
+.reviews .review {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.reviews .review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.reviewer-info {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.review-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.review-rating {
+    color: #f4b400;
+    font-size: 1.2em;
+}
+
+.review-text {
+    margin-top: 10px;
+}
+
+.review-thumbs {
+    margin-top: 10px;
+}
+
+.review-thumbs button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    color: #666;
+}
+
+.review-thumbs button:hover {
+    color: #000;
+}
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Facebook Lite 1.0</h1>
+            <a href="https://github.com/Alicia-Ava/FB/raw/main/Fb_v1.0/com.facebook_%231_1.0.apk" class="install-button">Download APK</a>
+        </div>
+    </header>
+    <main>
+        <div class="app-details">
+            <img src="app-logo.png" alt="App Logo" class="app-logo">
+            <div class="app-info">
+                <h2>Facebook Lite</h2>
+                <p>Category: Social</p>
+                <p>Rating: ★★★★☆</p>
+                <a href="https://github.com/Alicia-Ava/FB/raw/main/Fb_v1.0/com.facebook_%231_1.0.apk" class="install-button">Download APK</a>
+            </div>
+        </div>
+        <section class="description">
+            <h3>About this app</h3>
+            <p>Facebook Lite is designed to be faster and more efficient with data. This version (1.0) provides basic functionalities of Facebook while using minimal resources.</p>
+        </section>
+        <section class="screenshots">
+            <h3>Screenshots</h3>
+            <div class="screenshot-container">
+                <img src="screenshot1.png" alt="Screenshot 1">
+                <img src="screenshot2.png" alt="Screenshot 2">
+                <img src="screenshot3.png" alt="Screenshot 3">
+            </div>
+        </section>
+        <section class="reviews">
+            <h3>User Reviews</h3>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user1.png" alt="User 1" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">John Doe</p>
+                        <p class="review-date">June 1, 2024</p>
+                        <p class="review-rating">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Amazing app! It has transformed how I manage my tasks daily. Highly recommended!</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 10</button>
+                    <button class="thumb-down">👎 1</button>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user2.png" alt="User 2" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">Jane Smith</p>
+                        <p class="review-date">May 28, 2024</p>
+                        <p class="review-rating">★★★★☆</p>
+                    </div>
+                </div>
+                <p class="review-text">Great features and very user-friendly interface. A must-have app!</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 8</button>
+                    <button class="thumb-down">👎 0</button>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="user3.png" alt="User 3" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <p class="reviewer-name">Alice Johnson</p>
+                        <p class="review-date">May 20, 2024</p>
+                        <p class="review-rating">★★★☆☆</p>
+                    </div>
+                </div>
+                <p class="review-text">Good app but needs more customization options. Looking forward to updates.</p>
+                <div class="review-thumbs">
+                    <button class="thumb-up">👍 5</button>
+                    <button class="thumb-down">👎 2</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+          </html>
