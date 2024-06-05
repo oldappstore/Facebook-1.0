@@ -5,150 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook Lite 1.0</title>
     <style>
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-header {
-    background-color: #4285f4;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-.install-button {
-    background-color: #34a853;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
+        .install-button {
+            background-color: #34a853;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
 
-.install-button:hover {
-    background-color: #2c8b4b;
-}
+        .install-button:hover {
+            background-color: #2c8b4b;
+        }
 
-.app-details {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
+        .app-details {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
 
-.app-logo {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    border-radius: 15px;
-}
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 15px;
+        }
 
-.app-info {
-    flex: 1;
-}
+        .app-info {
+            flex: 1;
+        }
 
-.description, .screenshots, .reviews {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-}
+        .description, .screenshots, .reviews, .more-apps {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
 
-.screenshot-container {
-    display: flex;
-    gap: 10px;
-}
+        .screenshot-container {
+            display: flex;
+            gap: 10px;
+        }
 
-.screenshot-container img {
-    width: calc(33.333% - 10px);
-    height: auto;
-    border-radius: 10px;
-}
+        .screenshot-container img {
+            width: calc(33.333% - 10px);
+            height: auto;
+            border-radius: 10px;
+        }
 
-.reviews .review {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-}
+        .reviews .review {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
 
-.reviews .review:last-child {
-    border-bottom: none;
-}
+        .reviews .review:last-child {
+            border-bottom: none;
+        }
 
-.review-header {
-    display: flex;
-    align-items: center;
-}
+        .review-header {
+            display: flex;
+            align-items: center;
+        }
 
-.reviewer-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
+        .reviewer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
 
-.reviewer-info {
-    flex: 1;
-}
+        .reviewer-info {
+            flex: 1;
+        }
 
-.reviewer-name {
-    font-weight: bold;
-    margin: 0;
-}
+        .reviewer-name {
+            font-weight: bold;
+            margin: 0;
+        }
 
-.review-date {
-    font-size: 0.9em;
-    color: #666;
-}
+        .review-date {
+            font-size: 0.9em;
+            color: #666;
+        }
 
-.review-rating {
-    color: #f4b400;
-    font-size: 1.2em;
-}
+        .review-rating {
+            color: #f4b400;
+            font-size: 1.2em;
+        }
 
-.review-text {
-    margin-top: 10px;
-}
+        .review-text {
+            margin-top: 10px;
+        }
 
-.review-thumbs {
-    margin-top: 10px;
-}
+        .review-thumbs {
+            margin-top: 10px;
+        }
 
-.review-thumbs button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    margin-right: 10px;
-    color: #666;
-}
+        .review-thumbs button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-right: 10px;
+            color: #666;
+        }
 
-.review-thumbs button:hover {
-    color: #000;
-}
-</style>
+        .review-thumbs button:hover {
+            color: #000;
+        }
+
+        .more-apps {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .app-item {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 20px); /* Adjusts the width of each app item */
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .app-item .install-button {
+            margin-top: 10px;
+        }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -179,6 +215,74 @@ header {
                 <img src="screenshot1.png" alt="Screenshot 1">
                 <img src="screenshot2.png" alt="Screenshot 2">
                 <img src="screenshot3.png" alt="Screenshot 3">
+            </div>
+        </section>
+        <section class="more-apps">
+            <h3>More Apps</h3>
+            <div class="app-list">
+                <div class="app-item">
+                    <img src="capcut.png" alt="CapCut" class="app-icon">
+                    <div class="app-details">
+                        <h4>CapCut</h4>
+                        <p>Category: Video Players & Editors</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/capcut-for-android/com.lemon.lvoverseas" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="galaxy.png" alt="Galaxy Attack: Alien Shooter" class="app-icon">
+                    <div class="app-details">
+                        <h4>Galaxy Attack: Alien Shooter</h4>
+                        <p>Category: Arcade</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/galaxy-attack-premium/com.alien.shooter.galaxy.attack.premium" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="legend.png" alt="Legend City" class="app-icon">
+                    <div class="app-details">
+                        <h4>Legend City</h4>
+                        <p>Category: Strategy</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/legend-city/com.yuedong.app.codgp1" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="tiktok.png" alt="TikTok Lite" class="app-icon">
+                    <div class="app-details">
+                        <h4>TikTok Lite</h4>
+                        <p>Category: Social</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/tiktok-lite-2024/com.zhiliaoapp.musically.go" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="https://www.flaticon.com/free-icon/messenger_5968771?term=messenger+logo&page=1&position=2&origin=search&related_id=5968771" alt="Messenger" class="app-icon">
+                    <div class="app-details">
+                        <h4>Messenger</h4>
+                        <p>Category: Communication</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/facebook-messenger/com.facebook.orca" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="business.png" alt="Meta Business Suite" class="app-icon">
+                    <div class="app-details">
+                        <h4>Meta Business Suite</h4>
+                        <p>Category: Business</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/meta-business-suite/com.facebook.pages.app" class="install-button">Download</a>
+                    </div>
+                </div>
+                <div class="app-item">
+                    <img src="ads.png" alt="Meta Ads Manager" class="app-icon">
+                    <div class="app-details">
+                        <h4>Meta Ads Manager</h4>
+                        <p>Category: Business</p>
+                        <p>Rating: ★★★★☆</p>
+                        <a href="https://apkpure.com/meta-ads-manager/com.facebook.adsmanager" class="install-button">Download</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="reviews">
@@ -231,4 +335,4 @@ header {
         </section>
     </main>
 </body>
-          </html>
+                        </html>
